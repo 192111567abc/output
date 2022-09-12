@@ -1,0 +1,30 @@
+#include<iostream> 
+#include <bits/stdc++.h>
+ using namespace std; 
+ int main() 
+ {  int i,a[10],n,x,y,sum,diff,g,h;  
+ cout<<"enter the size of array = ";  
+ cin>>n; 
+  for(i=0;i<n;i++) 
+   {   cout<<"enter the elements="<<i+1<<"="; 
+    cin>>a[i]; 
+	}  
+	sort(a,a+i);  
+	cout<<"\nsorted array\n";  
+	for(i=0;i<n;i++)  
+	{   
+	cout<<a[i]<<" "; 
+	}  
+	cout<<"\nenter the nth min="; 
+	cin>>x; 
+	cout<<"\nenter the mth max="; 
+	cin>>y;  
+	cout<<"\nthe "<<x<<"th minimum number is ="<<a[x]; 
+	cout<<"\nthe "<<y<<"th maximum number is ="<<a[n-y];
+	g=a[x]+a[n-y];
+	h=a[x]-a[n-y];
+    cout<<"\nsum of the nth and mth"<<g;
+    cout<<"\ndiff of the nth and mth"<<h;
+    return 0;
+    
+}
