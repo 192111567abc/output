@@ -1,0 +1,30 @@
+int main()
+{
+ int i,n, j;
+ cout<<"enter the number of rows";
+ cin>>n;
+ for(i=1; i<=n; i++)
+ {
+  for(j=1; j<i*2; j++) 
+  {
+   if(j%2 == 0)
+    cout << "";
+   else 
+    cout << i;
+  }
+  cout << "\n";
+ }
+ // Second Part
+ for(i=4; i>=1; i--)
+ {
+  for(j=1; j<i*2; j++)
+  {
+   if(j%2 == 0)
+    cout << "";
+   else 
+    cout << i; 
+  }
+  cout << "\n";
+ }
+ return 0;
+}
