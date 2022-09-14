@@ -1,12 +1,13 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
-    int positive=0, negative=0, zero=0, i, arr[10];
-    cout<<"Enter 10 Numbers: ";
-    for(i=0; i<10; i++)
+{
+    int positive=0, negative=0, zero=0, i, arr[5];
+    cout<<"Enter 5 Numbers: ";
+    for(i=0; i<5; i++)
         cin>>arr[i];
-    for(i=0; i<10; i++)
+    for(i=0; i<5; i++)
     {
         if(arr[i]>0)
             positive++;
@@ -19,5 +20,64 @@ int main()
     cout<<"\nFrequency of Zero: "<<zero;
     cout<<"\nFrequency of Negative Numbers: "<<negative;
     cout<<endl;
+}
+{
+    int a,b,c,d,e;
+    int positive, negative;
+    cout << "Please enter 5 whole numbers: " << endl;
+    cin >> a;
+    cin >> b;
+    cin >> c;
+    cin >> d;
+    cin >> e;
+    if (a > 0)
+    {
+        a = positive;
+    }
+    else
+    {
+        a = negative;
+    }
+    if (b > 0)
+    {
+        b = positive;
+    }
+    else
+    {
+        b = negative;
+    }
+    if (c > 0)
+    {
+        c = positive;
+    }
+    else
+    {
+        c = negative;
+    }
+    if (d > 0)
+    {
+        d = positive;
+    }
+    else
+    {
+        d= negative;
+    }
+    if (e > 0)
+    {
+        e = positive;
+    }
+    else
+    {
+        e= negative;
+    }
+    int sum;
+    sum = (a + b + c + d + e);
+    int average;
+    average = (a + b + c + d + e) / (5);
+    cout << "The sum of all five numbers is " << sum << "." << endl;
+    cout << "The average of all five numbers is " << average << "." << endl;
+    cout << "The avergae of the " "positive numbers is " <<positive<< endl;
+    cout << "The average of the " "negative numbers is " << negative<<endl;
     return 0;
+}
 }
