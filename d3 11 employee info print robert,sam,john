@@ -1,0 +1,61 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Employee{
+    private:
+        string name;
+        string address;
+        int year;
+        int salary;
+
+    public:
+        Employee(string, int, int, string);
+        string getName();
+        int getYear();
+        int getSalary();
+        string getAddress();
+        void displayData();
+};
+Employee::Employee(string n, int y, int sal, string add)
+{
+    name = n;
+    year = y;
+    salary = sal;
+    address = add;
+}
+string Employee::getName()
+{
+    return name;
+}
+int Employee::getYear()
+{
+    return year;
+}
+int Employee::getSalary()
+{
+    return salary;
+}
+string Employee::getAddress()
+{
+    return address;
+}
+void Employee::displayData()
+{
+    cout << getName() << '\t' << getYear() << "\t" << getSalary() << '\t' << getAddress();
+}
+
+int main()
+{
+    Employee e1("Robert", 1994, 500000, "64C - WallsStreet");
+    Employee e2("Sam", 2000, 740000, "68D - WallsStreet");
+    Employee e3("John", 1999, 600000, "26B - WallsStreet");
+    cout << "\nName\tYear\tSalary\tAddress" << '\n';
+    e1.displayData();
+    cout << '\n';
+    e2.displayData();
+    cout << '\n';
+    e3.displayData();
+    cout << '\n';
+}
